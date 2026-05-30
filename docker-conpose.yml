@@ -4,9 +4,9 @@ services:
     image: pgvector/pgvector:pg16
 
   backend:
-    image: yourdockerhubusername/multimodal-backend:latest
+    image: sanju0123/multimodal-backend:latest
     env_file:
       - .env
 
   frontend:
-    image: yourdockerhubusername/multimodal-frontend:latest
+    image: sanju0123/multimodal-frontend:latest
