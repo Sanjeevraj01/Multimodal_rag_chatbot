@@ -1,0 +1,12 @@
+services:
+
+  postgres:
+    image: pgvector/pgvector:pg16
+
+  backend:
+    image: yourdockerhubusername/multimodal-backend:latest
+    env_file:
+      - .env
+
+  frontend:
+    image: yourdockerhubusername/multimodal-frontend:latest
